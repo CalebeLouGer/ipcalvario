@@ -36,9 +36,10 @@ ipcalvario/
 ## 🛠️ Como Utilizar
 
 1. Clone este repositório:
-   ```bash
+   ```
+   bash
    git clone https://github.com/CalebeLouGer/ipcalvario.git
-````
+   ````
 
 2. Abra o arquivo `index.html` no navegador de sua preferência.
 
@@ -52,7 +53,7 @@ Projeto desenvolvido por **[Calebe Lourenço](https://github.com/CalebeLouGer)**
 
 Se quiser trocar ideias sobre desenvolvimento web, tecnologia ou fé, fique à vontade para entrar em contato!
 
-    - Instagram: https://www.instagram.com/_calebe.l/
+   - Instagram: [Calebe Lourenço](https://www.instagram.com/_calebe.l/)
 
 ---
 
