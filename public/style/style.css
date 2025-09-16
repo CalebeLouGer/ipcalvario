@@ -171,6 +171,7 @@ main{
     padding: 4rem;
     width: 100%;
     background-color: var(--cor-contato);
+    border-radius: 8px;
 }
 .contato_titulo{
     font-size: 30px;
