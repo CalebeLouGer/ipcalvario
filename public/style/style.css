@@ -4,10 +4,11 @@
     --cor-primaria: #f8f9fa;
     --cor-secundaria: #ffffff;
     --cor-botao: #1e293b;
-    --cor-texto-principal: #212529;
+    --cor-texto_principal: #212529;
     --cor_texto_secundario: #6c757d;
     --cor-destaque: #6c757d;
     --cor-hover: #343a40;
+    --cor-contato:  #e5e7eb;
 
     --fonte-principal: 'Inter', sans-serif;
 }
@@ -24,7 +25,7 @@
 body{
     box-sizing: border-box ;
     background-color: var(--cor-primaria);
-    color: var(--cor-texto);
+    color: var(--cor-texto_principal);
     font-family: var(--fonte-principal);
 }
 
@@ -39,34 +40,161 @@ header{
 
 }
 .banner{
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 20px;
 }
 .banner_titulo{
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 800;
-    gap: 10px;
 }
 .banner_subtitulo{
     font-size: 20px;
     font-weight: 500;
-    gap: 30px;
+    color: var(--cor-primaria);
 }
-
+.banner_texto{
+    width: 55%;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor-primaria);
+}
 /* Main */
 
 main{
-    padding: 5% 15%;
+    padding: 5% 8%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 30px;
 }
+        /* Programa */
+#programa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.programa_container{
+    display: flex;
+    gap: 20px;
+}
+.programa_titulo{
+    padding: 0 0 2% 0;
+    font-size: 36px;
+    font-weight: 700;
+}
+.programa_conteudo{
+    width: 40%;
+    padding: 1rem;
+    border-radius: 8px;
+    border-top: 4px solid var(--cor-destaque);
+    background-color: var(--cor-secundaria);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.programa_conteudo_informacao{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.programa_conteudo_informacao_titulo{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--cor-texto_secundario);
+}
+.programa_conteudo_informacao_texto{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cor-texto_secundario);
+}
+.programa_conteudo_informacao_assunto{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cor-texto_secundario);
+}
 
+        /* Atividades de Grupo */
+
+#atividade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.atividade_conteudo{
+    display: flex;
+    gap: 20px;
+}
+.atividade_titulo{
+    padding: 4% 0 2% 0;
+    font-size: 36px;
+    font-weight: 700;
+}
+.atividade_conteudo_informacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: var(--cor-secundaria);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.atividade_conteudo_informacao_titulo{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--cor-texto_secundario);
+}
+.atividade_conteudo_informacao_texto{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cor-texto_secundario);
+}
+
+        /* Contato */
+#contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 4rem;
+    width: 100%;
+    background-color: var(--cor-contato);
+}
+.contato_titulo{
+    font-size: 30px;
+    font-weight: 700;
+}
+.contato_texto{
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-texto_secundario);
+}
+.contato_link{
+    font-size: 16px;
+    background-color: var(--cor-botao);
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    border-radius: 120px;
+}
+.contato_link:hover{
+    background-color: var(--cor-hover);
+    transition: 0.3s;
+}
 
 /* Footer */
 footer{
@@ -78,4 +206,46 @@ footer{
     align-items: center;
     flex-direction: column;
     gap: 10px;
+}
+
+@media (max-width: 768px) {
+    header{
+        padding: 10% 5%;
+    }
+    .banner_titulo{
+        font-size: 25px;
+    }
+    .banner_texto{
+        width: 100%;
+        font-size: 16px;
+    }
+    main{
+        padding: 10% 5%;
+    }
+    .programa_container, .atividade_conteudo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .programa_conteudo, .atividade_conteudo_informacao{
+        width: 100%;
+    }
+    .programa_titulo, .atividade_titulo{
+        font-size: 24px;
+    }
+    #contato{
+        padding: 4rem 2rem;
+    }
+    .contato_titulo{
+        text-align: center;
+        font-size: 24px;
+    }
+    .contato_texto{
+        width: 100%;
+        font-size: 14px;
+    }
+    footer{
+        text-align: center;
+        padding: 5% 5%;
+        font-size: 14px;
+    }
 }
